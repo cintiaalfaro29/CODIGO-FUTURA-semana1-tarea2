@@ -1,8 +1,8 @@
-/* CREAR MULTIPLES CUENTAS */
+/* 🚀 Ejercicio 1: Creación Masiva de Cuentas */
 
 import { Keypair } from "@stellar/stellar-sdk";
 
-import fs from 'fs';
+import fs from "fs";
 const cuentas = [];
 
 //FUNCION PRINCIPAL
@@ -13,9 +13,9 @@ async function crearCuenta() {
   for (let i = 1; i <= 5; i++) {
     const pair = Keypair.random();
     cuentas.push({
-        CUENTA: `${i}`,
-        PUBLICKEY: pair.publicKey(),
-        SECRETKEY: pair.secret()
+      CUENTA: `${i}`,
+      PUBLICKEY: pair.publicKey(),
+      SECRETKEY: pair.secret(),
     });
     console.log(`Cuenta ${i} creada exitosamente :D`);
     console.log("PUBLIC KEY (puedes compartir): ");
@@ -42,6 +42,6 @@ async function crearCuenta() {
     }
     console.log("IMPORTANTE: guarda estas llaves en un lugar seguro");
   }
-  fs.writeFileSync('cuentas.json', JSON.stringify(cuentas, null, 2));
+  fs.writeFileSync("cuentas.json", JSON.stringify(cuentas, null, 2));
 }
 crearCuenta();
