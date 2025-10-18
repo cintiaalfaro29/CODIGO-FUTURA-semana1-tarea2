@@ -18,7 +18,7 @@ const server = new Horizon.Server("https://horizon-testnet.stellar.org");
 //Network passphrase (identifica la red)
 const networkpassphrase = Networks.TESTNET;
 
-const SECRET_KEY = "SXXX..."; //tu secret key
+const SECRET_KEY = "SXXX..."; //tu secret key(cambiar por .env)
 const DESTINATARIOS = [
   {
     publicKey: "GDUGUGNQD4FI4CJURBLXKUOGF6TZ2QMJXMBSK56WEHXO7ZYY7RTMI3NJ",
