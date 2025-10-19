@@ -68,5 +68,6 @@
 💙 Buen Día Builders 
 
 **Mentoras:**
-    🌟 Elisa Araya  
-    🌟 Tatiana Borda
+
+🌟 Elisa Araya  
+🌟 Tatiana Borda
